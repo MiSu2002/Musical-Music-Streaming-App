@@ -1,4 +1,10 @@
 {
+  include: [
+    "src/pages/Discover.tsx",
+    "src/redux/features/playerSlice.ts",
+    "src/custom.d.ts"
+  ],
+
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -8,19 +14,18 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "declaration": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx"
-  },
-  "include": [
-    "src"
-  ]
+  }
 }

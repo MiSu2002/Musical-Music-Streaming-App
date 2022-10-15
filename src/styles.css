@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.App-header {
+  background-image: url(../public/background.jpeg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.board{
+  background-color: rgb(26,26,26,0.68);
+  /* min-height: 89vh; */
+  top: 0;
+  bottom: 0;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x: hidden;
+  border-radius: 30px;
+  /* position: relative; */
+  /* margin-top: 3vmin; */
+  /* width: calc(100% - 20vmin); */
+  width: 88vw;
+  font-size: calc(10px + 2vmin);
+  margin-left: 10vw;
+  margin-right: 2vw;
+  margin-bottom: 3vh;
+  margin-top: 7vh;
+  color: white;
+}
+
+/* @media screen and (min-height: 1000px){
+  .board{
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+} */
+
+.searchbar{
+  font-size: calc(2px + 0.8rem);
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 3px solid rgba(233, 232, 232, 0.37);
+}
+
+.searchbar::placeholder{
+  color: rgb(255, 255, 255);
+}
+
+.selectbox{
+  height: 2rem;
+  width: 6rem;
+}
+
+.sidebar{
+  background-color: rgba(234,234,234,0.08);
+  border-radius: 30px 0 0 30px;
+  min-height: 89vh;
+}
+
+.profile{
+  background-image: url("/public/images/Profile\ Picture.png");
+  height: 10vh;
+  width: 10vw;
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.songcard{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  opacity: 0.8;
+  width: 13rem;
+  cursor: pointer;
+}
+
+.songcard .box1{
+  height: 9rem;
+}
+
+.songcard .box2{
+  inset: 0;
+  background-color: #000;
+}
+
+@media screen and (max-width: 1000px){
+  .board{
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
