@@ -10,8 +10,8 @@ function DisplayBoard(){
             {/* Profile pic in xs devices */}
 
             <div className="d-block d-sm-none">
-                    <div className="ms-4 mt-4">
-                    <div className="profile mt-2"></div>
+                    <div className="ms-3 mt-2">
+                    <div className="profile position-relative mt-3"></div>
                     </div>
                     </div>
 
@@ -38,7 +38,7 @@ function DisplayBoard(){
                 <div className="col-sm-10">
                 <div className="row mt-sm-5 me-4 ms-4">
                         <div className="col-12 col-lg-6 col-xl-7">
-                            <input type="text" className="searchbar form-control rounded-pill mt-sm-2 ms-xl-3" placeholder="Search for songs, artists, genres and more...">
+                            <input type="text" className="searchbar form-control rounded-pill mt-sm-3 ms-xl-3" placeholder="Search for songs, artists, genres and more...">
                             </input>
                         </div>
                     </div>
