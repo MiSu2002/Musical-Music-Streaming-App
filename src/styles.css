@@ -106,12 +106,12 @@
 }
 
 .subtitle{
-  margin-top: -1rem;
-  margin-bottom: -0.7rem;
+  margin-top: -1.2rem;
+  margin-bottom: -0.9rem;
 }
 
 .subtitle .link{
-  font-size: calc(0.4rem + 1.5vmin);
+  font-size: calc(0.3rem + 1.5vmin);
   color: rgb(215, 215, 215);
 }
 

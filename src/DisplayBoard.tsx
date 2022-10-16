@@ -1,5 +1,6 @@
 import React from 'react';
 import Discover from './pages/Discover';
+import Sidebar from './components/Sidebar';
 import './styles.css'
 
 function DisplayBoard(){
@@ -17,21 +18,7 @@ function DisplayBoard(){
 
                 {/* SideBar component */}
                 <div className="sidebar d-none d-sm-block col-sm-2">
-
-                    {/* Hidden on smaller devices */}
-                    <div className="d-none d-lg-block">
-                    <div className="d-flex justify-content-end container ms-xxl-4 mt-4">
-                    <div className="profile mt-2"></div>
-                    </div>
-                    </div>
-
-                    {/* Visible on smaller devices */}
-                    <div className="d-block d-lg-none">
-                    <div className="container ms-2 ms-md-3 mt-4">
-                    <div className="profile mt-2"></div>
-                    </div>
-                    </div>
-
+                    <Sidebar/>
                 </div>
 
 
