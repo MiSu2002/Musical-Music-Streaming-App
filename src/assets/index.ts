@@ -1,5 +1,5 @@
-import loader from './loader.gif';
+import loader from './loader.svg';
 
 export {
-  loader,
+  loader
 };

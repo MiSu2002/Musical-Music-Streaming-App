@@ -1,49 +1,38 @@
 .App {
   text-align: center;
   overflow-x: hidden;
-}
-
-.App-header {
-  background-image: url(../public/background.jpeg);
+  background-image: url("../public/images/background.jpeg");
+  background-repeat: no-repeat;
   min-height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.App-header {
+  display: flex;
+}
+
 .board{
   background-color: rgb(26,26,26,0.68);
-  /* min-height: 89vh; */
   top: 0;
-  bottom: 0;
+  bottom: 2rem;
   position:fixed;
   overflow-y:scroll;
+  z-index: 0;
   overflow-x: hidden;
   border-radius: 30px;
-  /* position: relative; */
-  /* margin-top: 3vmin; */
-  /* width: calc(100% - 20vmin); */
   width: 88vw;
   font-size: calc(10px + 2vmin);
   margin-left: 10vw;
   margin-right: 2vw;
   margin-bottom: 3vh;
   margin-top: 7vh;
+  z-index: 0;
   color: white;
 }
-
-/* @media screen and (min-height: 1000px){
-  .board{
-    min-height: 100vh;
-    margin: 0;
-    width: 100%;
-    border-radius: 0;
-  }
-} */
 
 .searchbar{
   font-size: calc(2px + 0.8rem);
@@ -53,12 +42,28 @@
 }
 
 .searchbar::placeholder{
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255);
+  background-image: url('../public/icons/search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  opacity: 0.8;
 }
 
+.logo{
+  background-image: url("../public/images/logo.png");
+  padding: calc(1.3rem + 1.3vw);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 55vh;
+  margin-left: calc(0.2rem + 1.3vw);
+  }
+
 .selectbox{
-  height: 2rem;
-  width: 6rem;
+  height: 2.5rem;
+  width: 5rem;
+  font-size: calc(5px + 1.5vmin);
 }
 
 .sidebar{
@@ -74,31 +79,35 @@
   position: fixed;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 5;
+}
+
+.profile-menu{
+  background: transparent;
+  border: transparent;
+  color: transparent;
+  width: 3.5rem;
+}
+
+.dropdown-menu{
+  background-color: rgba(62, 62, 62, 0.725);
+  cursor: pointer;
+  height: 20vh;
+}
+
+.dropdown-item:hover{
+  font-weight: bold;
+  color: rgb(138, 43, 226);
 }
 
 .songcard{
-  background-color: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
   opacity: 0.8;
   width: 13rem;
   cursor: pointer;
 }
 
 .songcard .box1{
-  height: 9.5rem;
   width: 100%;
-}
-
-.box2:hover{
-  display: flex;
-}
-
-.album-image{
-  height: 11rem;
-  width: 11.4rem;
-  margin-left: -0.7rem;
-  margin-top: -0.7rem;;
 }
 
 .title .link{
@@ -110,12 +119,22 @@
   margin-bottom: -0.9rem;
 }
 
+.artist{
+  margin-top: -1rem;
+}
+
 .subtitle .link{
   font-size: calc(0.3rem + 1.5vmin);
   color: rgb(215, 215, 215);
 }
 
-@media screen and (max-width: 1000px){
+.player-container{
+  top:calc(90vh - 5vmin);
+  bottom:0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px){
   .board{
     min-height: 100vh;
     margin: 0;

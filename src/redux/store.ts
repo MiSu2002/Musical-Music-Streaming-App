@@ -1,3 +1,5 @@
+//@ts-nocheck
+
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import playerReducer from './features/playerSlice';
