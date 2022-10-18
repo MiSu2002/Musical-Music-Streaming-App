@@ -1,4 +1,4 @@
-.App {
+.Homepage {
   text-align: center;
   overflow-x: hidden;
   background-image: url("../public/images/background.jpeg");
@@ -11,7 +11,7 @@
   color: white;
 }
 
-.App-header {
+.Homepage-header {
   display: flex;
 }
 
@@ -90,9 +90,9 @@
 }
 
 .dropdown-menu{
-  background-color: rgba(62, 62, 62, 0.725);
+  background-color: rgba(49, 49, 49, 0.813);
   cursor: pointer;
-  height: 20vh;
+  height: 22vh;
 }
 
 .dropdown-item:hover{
@@ -141,4 +141,42 @@
     width: 100%;
     border-radius: 0;
   }
+}
+
+.background-login{
+  background-image: url('../public/images/login-bg.jpeg');
+  background-color: rgba(0, 0, 0, 0.483);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+.card-login{
+  background-color: rgba(255, 255, 255, 0.839);
+  border-radius: 1rem;
+}
+
+.login-logo{
+  background-image: url("../public/images/logo.png");
+  padding: calc(1.3rem + 1.3vw);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-login{
+  border-radius: 1rem 0 0 1rem;
+}
+
+.logo-login{
+  color: #ff6219;
+}
+
+.sign-in{
+  letter-spacing: 1px;
+}
+
+.account{
+  color: #393f81;
 }

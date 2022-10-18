@@ -1,4 +1,5 @@
 import { FaSearch, FaHome, FaFolder, FaHeart } from 'react-icons/fa';
+import {FiLogOut} from 'react-icons/fi';
 
 export const genres = [
   { title: 'Pop', value: 'POP' },
@@ -18,8 +19,9 @@ export const genres = [
 ];
 
 export const links = [
-  { name: 'Discover', to: '/', icon: FaHome },
+  { name: 'Discover', to: '/discover', icon: FaHome },
   { name: 'Playlists', to: '/playlists', icon: FaFolder },
   { name: 'Likes', to: '/likes', icon: FaHeart },
   { name: 'Search', to: '/search', icon: FaSearch },
+  { name: 'Logout', to:'/', icon: FiLogOut}
 ];

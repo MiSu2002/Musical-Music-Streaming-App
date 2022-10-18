@@ -25,7 +25,7 @@ function Main() {
           </div>
           <div className="container ms-4 me-4">
             <Routes>
-              <Route path="/" element={<Discover />} />
+              <Route path="/discover" element={<Discover />} />
             </Routes>
           </div>
         </div>

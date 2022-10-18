@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "0041748fb3msha41116a84d79f56p1ed132jsnebe854d6b232",
+    "X-RapidAPI-Key": "API_key",  //TO DO
     "X-RapidAPI-Host": "shazam-core.p.rapidapi.com",
   },
 };
@@ -22,7 +22,7 @@ export const shazamCoreApi = createApi({
     prepareHeaders: (headers) => {
       headers.set(
         "X-RapidAPI-Key",
-        "0041748fb3msha41116a84d79f56p1ed132jsnebe854d6b232"
+        "API_key" //TO DO
       );
 
       return headers;
